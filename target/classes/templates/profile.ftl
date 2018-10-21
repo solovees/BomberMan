@@ -14,6 +14,6 @@ ${message?ifExists}
         <input type="email" name="email" class="form-control" placeholder="some@some.com" value="${email!''}"/>
     </div>
     <button class="btn btn-primary" type="submit">Save</button>
-    <input type="hidden" name="_csrf" value="${_csrf.token}" /> 
+    <input type="hidden" name="_csrf" value="${_csrf.token}" />
 </form>
 </@c.page>
