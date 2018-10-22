@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch:400,700|Shadows+Into+Light" rel="stylesheet">
         <title>Sweater</title>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <div class="main">

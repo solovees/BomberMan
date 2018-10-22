@@ -43,6 +43,14 @@
                     </div>
                 </#if>
             </div>
+            <div>
+                <div class="g-recaptcha" data-sitekey="6LeyRnYUAAAAAKc4fb3DJiX0ROanSQKkUCeqQHYv"></div>
+                <#if captchaError??>
+                    <div class="alert alert-danger" role="alert">
+                        ${captchaError}
+                    </div>
+                </#if>
+            </div>
             </#if>
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
         <#if !isRegisterForm><a href="/registration">Add new user</a></#if>
