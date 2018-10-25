@@ -22,6 +22,10 @@ public class User  implements UserDetails{
     @NotBlank(message = "Password cannot be empty")
     private String password;
 
+    // для отображения всех сообщений, которые сделал пользователь
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<Message> messages;
+
     private boolean active;
 
     @Email(message = "Email is not correct")
@@ -120,4 +124,11 @@ public class User  implements UserDetails{
         this.activationCode = activatioCode;
     }
 
+    public Set<Message> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(Set<Message> messages) {
+        this.messages = messages;
+    }
 }

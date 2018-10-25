@@ -8,11 +8,13 @@
     name = user.getUsername()
     isAdmin = user.isAdmin()
     signOut = true
+    signIn = false
     >
 <#else>
     <#assign
         name = " "
         isAdmin = false
         signOut = false
+        signIn = true
     >
 </#if>
